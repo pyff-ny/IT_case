@@ -12,6 +12,8 @@ tags:
 case_id: "N1-01"
 objective: "220-1201 2.1"
 environment: "macos"
+date: 2026-01-20 21:30:00
+
 ---
 
 需要记住的 5 条规则（避免再次“分类空”）
