@@ -12,4 +12,6 @@ tags:
 case_id: "O1-01"
 objective: "220-1202 1.4"
 environment: "macos"
+date: 2026-01-20 21:30:00
+
 ---
