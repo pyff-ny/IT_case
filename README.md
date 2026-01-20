@@ -74,3 +74,48 @@ Test 3：禁用代理/ VPN
 步骤可复用（0–2）：别人照着能复现/能排障
 复盘产出（0–2）：形成速查规则/避免复发
 达到 8 分以上，你的案例就具备“可展示价值”。
+
+======
+.
+├── _config.yml
+├── index.md
+├── about.md
+├── assets/
+│   └── images/
+└── _posts/
+    ├── 2026-01-19-case-n1-dns.md
+    ├── 2026-01-20-case-n2-gateway.md
+    └── 2026-01-21-case-h1-overheat.md
+每个 Case 写成一篇文章（Markdown），放 _posts/。文件名必须像：
+YYYY-MM-DD-标题.md
+
+
+文章开头加 Front Matter（这决定标题/日期/分类）：
+=======
+---
+layout: post
+title: "Case N1 | 能 ping IP 但打不开域名（DNS）"
+categories: [APlus, Network]
+tags: [DNS, Troubleshooting, Objective-2-1]
+---
+
+## 背景与影响
+...
+
+## 现象与证据
+...
+
+## 假设树
+...
+
+## 验证与结果
+...
+
+## 修复动作
+...
+
+## 复盘
+...
+
+## 对应 A+ Objectives
+- 2.1 ...
