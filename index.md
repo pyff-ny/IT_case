@@ -1,16 +1,13 @@
 ---
 layout: default
-title: Jerry's homepage
+title: IT case
 ---
 
-# IT case collection and study
+# Debug: categories
 
-## Network
-{% for post in site.categories.network %}
-- [{{ post.title }}]({{ post.url | relative_url }}) ({{ post.date | date: "%Y-%m-%d" }})
-{% endfor %}
+All categories: {{ site.categories | jsonify }}
 
-## Hardware
-{% for post in site.categories.hardware %}
-- [{{ post.title }}]({{ post.url | relative_url }}) ({{ post.date | date: "%Y-%m-%d" }})
+# Debug: posts
+{% for post in site.posts %}
+- title={{ post.title }} | categories={{ post.categories }} | tags={{ post.tags }} | url={{ post.url }}
 {% endfor %}
