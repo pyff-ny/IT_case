@@ -4,3 +4,6 @@ description: IT case colletion and study
 permalink: /:categories/:year/:month/:day/:title/
 url: "https://pyff-ny.github.io"
 baseurl: ""
+author: Jerry
+
+
