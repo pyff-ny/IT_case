@@ -42,19 +42,16 @@ system_profiler SPBluetoothDataType | head -n 30
 ```
 ![Bluetooth controller status](/assets/images/bluetooth-profiler.png)
 
-## 观察点：
-Bluetooth Controller 是否存在（能否读取到 Address / Chipset 等）
-State: On/Off 是否能反映控制器状态
-是否存在已连接 HID 设备（鼠标/键盘/触控板）
-## 结果（示例要点）：
-Bluetooth Controller 信息可见
-State: On
-已连接 Magic Mouse / Trackpad / Keyboard
+
+## 结果：
+* 系统可识别蓝牙控制器 (Braodcom芯片)
+* controller状态为 On
+已有HID外设正常连接(Magic Mouse / Trackpad / Keyboard)
 
 ## 结论：
-控制器存在且可被系统识别
-当前时刻蓝牙功能已恢复（State: On + 设备已连接）
-更倾向于“服务/UI 短暂卡死或状态不同步”，而非硬件损坏
+* 排除蓝牙硬件缺失或驱动未加载问题
+* 问题更可能发生在系统服务或UI状态层
+
 
 ✅ 根因（Root Cause）
 macOS 蓝牙相关系统服务/界面组件发生短暂无响应（服务卡住或状态不同步），导致开关动作不生效；随后系统进程重启或状态刷新，功能恢复。
