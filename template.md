@@ -19,3 +19,14 @@ Network
 Hardware
 OS
 User / Process（用户描述、复现、教育交付）
+
+3) 每个 Case 页面的“展示版结构”（统一版式，面试官一眼扫懂）
+你可以把每篇 Case 固定成这 7 段（不需要长，关键是一致）：
+症状（用户语言）
+初始判断（Hypothesis Tree）
+验证步骤（Step 1/2/3… + 结果）
+根因（Root Cause）
+修复（Fix）
+复盘（Prevent/Next time）
+A+ Objective Mapping（对应知识点）
+你已经在 Case N1 里写了 1–3，补齐 4–7 就是“可展示级”。
